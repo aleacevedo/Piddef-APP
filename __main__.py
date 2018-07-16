@@ -1,6 +1,7 @@
 import ToolsClorofila as TC
 import ToolsSST as TS
 import Graficar as Gr
+import Recortar as Rc
 
 
 def __init__():
@@ -11,7 +12,7 @@ def __init__():
         print('ERROR: Ah ingresado un valor no numerico')
         return -1
 
-    if opcion<1 and opcion>3:
+    if opcion<1 and opcion>4:
         print('Error: Ah ingresado un numero no valido')
         return -1
 
@@ -23,5 +24,8 @@ def __init__():
 
     if opcion==3:
         return Gr()
+
+    if opcion==4:
+        return Rc.Recortar()
 
 __init__()

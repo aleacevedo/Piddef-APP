@@ -1,10 +1,11 @@
-from ToolsClorofila import AnioMedio, AmplitudAnual
+from ToolsClorofila import AnioMedio, AmplitudAnual, Anomalias, Calibracion, SeriesTemporales
 
 print("1. Trabajar con Clorofila")
 
 class Opciones:
 
-    opciones = ['1. Calcular Año Medio', '2. Calcular Amplitud del Año Medio', '3. Calcular Anomalias con respecto al Año Medio']
+    opciones = ['1. Calcular Año Medio', '2. Calcular Amplitud del Año Medio', '3. Calcular Anomalias con respecto al Año Medio', '4. Calibracion',
+                '5. Calcular Series Temporales']
 
     def __init__(self):
         for x in self.opciones:
@@ -24,5 +25,12 @@ class Opciones:
 
         if elegida == 2:
             AmplitudAnual.CalcularAmplitudAnual()
+
+        if elegida == 3:
+            Anomalias.CalcularAnomalias()
+
+        if elegida == 4:
+            Calibracion.Calibrar()
+
 
 
